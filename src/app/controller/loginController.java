@@ -51,10 +51,12 @@ public class loginController extends Controller {
 		Ret ret = Ret.create();
     	//1.参数校验
 		if(StrKit.isBlank(username)) {
-			ret.fail("msg", "用户名不能为空");
+			ret.put("msg", "用户名不能为空");
+			ret.setFail();
 		}
 		if(StrKit.isBlank(password)) {
-			ret.fail("msg", "密码不能为空");
+			ret.put("msg", "密码不能为空");
+			ret.setFail();
 		}
 		if(ret.isFail()) {
 			renderJson(ret);
@@ -67,29 +69,37 @@ public class loginController extends Controller {
 			return;
 		}
 		//2.1用户状态判断
-//		switch (user.getStatus()) {
-//		case "01":
-//			ret.fail("msg", "帐户已禁用");
-//			break;
-//		case "02":
-//			ret.fail("msg", "帐户待激活");
-//			break;
-//		case "03":
-//			ret.fail("msg", "帐户待审核");
-//			break;
-//		case "04":
-//			ret.fail("msg", "帐户审核未能过");
-//			break;
-//		case "05":
-//			ret.fail("msg", "帐户已过期");
-//			break;
-//		default:
-//			ret.setOk();
-//			break;
-//		}
-		ret.setOk();
+		log.info("用户状态"+user.getStatus());
+		switch (user.getStatus()) {
+		case 1:
+			ret.put("msg", "帐户已禁用");
+			ret.setFail();
+			break;
+		case 2:
+			ret.put("msg", "帐户待激活");
+			ret.setFail();
+			break;
+		case 3:
+			ret.put("msg", "帐户待审核");
+			ret.setFail();
+			break;
+		case 4:
+			ret.put("msg", "帐户审核未能过");
+			ret.setFail();
+			break;
+		case 5:
+			ret.put("msg", "帐户已过期");
+			ret.setFail();
+			break;
+		default:
+			ret.setOk();
+			break;
+		}
+		//log.info(ret.toJson());
+		//ret.put("stateCode", user.getStatus());   //设置状态码
 		//2.2登录失败
 		if(ret.isFail()) {
+			log.info("登陆失败，错误代码：  "+user.getStatus());
 			renderJson(ret);
 			return;
 		}
@@ -99,7 +109,10 @@ public class loginController extends Controller {
 		renderJson(ret);
 		//render("/index.html");  //直供测试使用
     }
-	 
+	
+	/**
+	 * 用户注销
+	 */
     public void logout() {
     	setSessionAttr(Consts.ADMIN_SESSION_USER, null);   //清除用户会话
     	redirect("/login");

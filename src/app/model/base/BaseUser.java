@@ -90,4 +90,13 @@ public abstract class BaseUser<M extends BaseUser<M>> extends Model<M> implement
 		return get("createBy");
 	}
 
+	public M setStatus(java.lang.Integer status) {
+		set("status", status);
+		return (M)this;
+	}
+
+	public java.lang.Integer getStatus() {
+		return get("status");
+	}
+
 }

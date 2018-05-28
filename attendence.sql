@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50160
 File Encoding         : 65001
 
-Date: 2018-05-21 16:33:35
+Date: 2018-05-28 09:17:29
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -196,11 +196,13 @@ CREATE TABLE `t_user` (
   `phone` varchar(30) NOT NULL COMMENT '用户电话号码',
   `email` varchar(100) NOT NULL COMMENT '注册邮箱',
   `createDate` date NOT NULL COMMENT '创建日期（按日）',
-  `createBy` int(11) DEFAULT NULL COMMENT '用户创建者ID',
+  `createBy` int(20) DEFAULT NULL COMMENT '用户创建者ID',
+  `status` int(10) NOT NULL COMMENT '账户状态：0:正常使用；1:帐户已禁用；2:帐户待激活；3:帐户待审核；4:帐户审核未能过；5:帐户已过期',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_user
 -- ----------------------------
-INSERT INTO `t_user` VALUES ('10000', '李震宇', 'root123456', '男', '1', '13235905890', '810772273@qq.com', '2018-05-20', null);
+INSERT INTO `t_user` VALUES ('10000', '李震宇', 'root123456', '男', '1', '13235905890', '810772273@qq.com', '2018-05-20', null, '0');
+INSERT INTO `t_user` VALUES ('170327019', '邓文路', '123456', '男', '2', '13233333333', '123@qq.com', '2018-05-20', '10000', '1');

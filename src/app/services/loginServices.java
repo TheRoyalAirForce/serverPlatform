@@ -2,6 +2,7 @@ package app.services;
 
 import com.jfinal.log.Log;
 import app.model.User;
+import app.util.MD5Util;
 
 public class loginServices {
 
@@ -12,6 +13,7 @@ public class loginServices {
 
 	// 登录用户
 	public User findUser(String username, String password) {
+		//String pwd = MD5Util.md5(password);
 		String sql = "select * from t_user where phone = '" + username + "' or email = '" + username + "'";
 		User user = User.dao.findFirst(sql);
 		if (user != null && user.getPassword().equals(password)) {

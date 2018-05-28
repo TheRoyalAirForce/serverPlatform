@@ -8,6 +8,9 @@ import app.interceptors.loginInterceptor;
 @Before(loginInterceptor.class)
 public class mainController extends Controller{
 
+	/**
+	 * 进入首页
+	 */
 	public void index() {
 		render("index.html");
 	}

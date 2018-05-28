@@ -6,6 +6,7 @@ import com.jfinal.aop.Interceptor;
 import com.jfinal.aop.Invocation;
 import com.jfinal.core.Controller;
 
+import app.Consts;
 import app.model.User;
 
 public class loginInterceptor implements Interceptor {
@@ -23,7 +24,7 @@ public class loginInterceptor implements Interceptor {
 			controller.redirect("/login");
 		}
 		else{
-			User sessionUser = (User)session.getAttribute("ADMIN_SESSION_USER");
+			User sessionUser = (User)session.getAttribute(Consts.ADMIN_SESSION_USER);
 			if(sessionUser == null){
 				controller.redirect("/login");
 			}
