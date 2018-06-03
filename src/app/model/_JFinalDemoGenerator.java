@@ -1,5 +1,12 @@
 package app.model;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.sql.DataSource;
 import com.jfinal.kit.PropKit;
 import com.jfinal.plugin.activerecord.generator.Generator;
@@ -38,7 +45,8 @@ public class _JFinalDemoGenerator {
 		// 设置是否生成链式 setter 方法
 		generator.setGenerateChainSetter(false);
 		// 添加不需要生成的表名
-		generator.addExcludedTable("adv");
+		generator.addExcludedTable(getExcTab("course_"));
+		generator.addExcludedTable(getExcTab("sign_in_"));
 		// 设置是否 Model 中生 dao 对象
 		generator.setGenerateDaoInModel(true);
 		// 设置是否生成链式 setter 方法
@@ -50,6 +58,36 @@ public class _JFinalDemoGenerator {
 		// 生成
 		generator.generate();
 	}
+	
+	private static String[] getExcTab(String preName) {
+		String sql = "SELECT table_name from information_schema.tables WHERE table_name LIKE '" + preName + "%'";
+		List<String> list = new ArrayList<String>();
+		Connection conn = null;
+		try {
+			conn = getDataSource().getConnection();
+			Statement stmt = conn.createStatement();
+			ResultSet rs = stmt.executeQuery(sql);
+			while (rs.next()) {
+				list.add(rs.getString(1));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		String[] s = new String[list.size()];
+		for (int i = 0; i < list.size(); i++) {
+			s[i] = list.get(i);
+		}
+		return s;
+	}
+	
 }
 
 

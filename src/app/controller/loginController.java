@@ -16,7 +16,7 @@ import com.jfinal.plugin.redis.Redis;
 
 import app.Consts;
 import app.model.User;
-import app.services.loginServices;
+import app.services.loginService;
 
 /**
  * 	后台管理功能首页
@@ -63,7 +63,7 @@ public class loginController extends Controller {
 			return;
 		}
 		//2.逻辑处理
-		User user = loginServices.me.findUser(username, password);
+		User user = loginService.me.findUser(username, password);
 		if(user == null) {
 			renderJson(ret.fail("msg", "用户名或密码错误"));
 			return;
@@ -105,7 +105,8 @@ public class loginController extends Controller {
 		}
 		//2.3登录成功
 		setSessionAttr(Consts.ADMIN_SESSION_USER, user);
-		log.debug("login success, by user: {}", user);
+		log.info("login success, by user: {}", user);
+		ret.put("user", user);
 		renderJson(ret);
 		//render("/index.html");  //直供测试使用
     }

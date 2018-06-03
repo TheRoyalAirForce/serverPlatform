@@ -1,0 +1,12 @@
+第一次上传新项目到远程github仓库
+1.在命令行中，输入“git init”，使Test文件夹加入git管理；
+2.输入“git add .”（不要漏了“.”），将Test文件夹全部内容添加到git。
+3.输入“git commit -m "first commit"”（“git commit -m "提交信息"”）
+4.输入“git remote add origin https://github.com/shench5612390/Test.git”（git remote add origin 你自己的https地址），连接你的github仓库。
+5.输入“git push -u origin master”，上传项目到Github。这里会要求输入Github的账号密码，按要求输入就可以。
+
+将github中已有项目从本地上传更新
+1.进入到要更新上传的项目
+2.执行git status  , 会发现未上传更新的文件呈现红色，再次执行git add .  , 再次执行git status ， 发现文件都上传呈现绿色
+3.git commit -m "提示内容" 
+4.git push -u origin master  

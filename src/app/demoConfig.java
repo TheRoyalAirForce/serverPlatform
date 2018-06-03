@@ -14,11 +14,13 @@ import com.jfinal.config.Plugins;
 import com.jfinal.config.Routes;
 import com.jfinal.kit.PropKit;
 import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
+import com.jfinal.plugin.activerecord.Db;
 import com.jfinal.plugin.activerecord.dialect.MysqlDialect;
 import com.jfinal.plugin.druid.DruidPlugin;
 import com.jfinal.plugin.ehcache.EhCachePlugin;
 import com.jfinal.template.Engine;
 
+import app.controller.courseController;
 import app.controller.loginController;
 import app.controller.mainController;
 import app.model._MappingKit;
@@ -28,6 +30,7 @@ public class demoConfig extends JFinalConfig
 	@Override
 	public void configConstant(Constants me)     //配置常量
 	{ 
+		Db.use();
 		PropKit.use("app/application.properties");
 		
         me.setDevMode(PropKit.getBoolean("devMode"));
@@ -50,6 +53,7 @@ public class demoConfig extends JFinalConfig
 		//静态路由
 		me.add("/",mainController.class);  
 		me.add("/login",loginController.class);
+		me.add("/course",courseController.class);
 	}
 	@Override
 	public void configEngine(Engine me)    

@@ -16,10 +16,11 @@ import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
 public class _MappingKit {
 
 	public static void mapping(ActiveRecordPlugin arp) {
+		arp.addMapping("t_auto_sign_in_table_list", "id", AutoSignInTableList.class);
 		arp.addMapping("t_classroom", "id", Classroom.class);
 		arp.addMapping("t_college", "id", College.class);
 		arp.addMapping("t_course", "id", Course.class);
-		arp.addMapping("t_elecource", "id", Elecource.class);
+		arp.addMapping("t_elecourse", "id", Elecourse.class);
 		arp.addMapping("t_major", "id", Major.class);
 		arp.addMapping("t_permission", "id", Permission.class);
 		arp.addMapping("t_role", "id", Role.class);

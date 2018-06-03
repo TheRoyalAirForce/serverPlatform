@@ -18,6 +18,15 @@ public abstract class BaseCourse<M extends BaseCourse<M>> extends Model<M> imple
 		return get("id");
 	}
 
+	public M setName(java.lang.String name) {
+		set("name", name);
+		return (M)this;
+	}
+
+	public java.lang.String getName() {
+		return get("name");
+	}
+
 	public M setStudentCount(java.lang.Integer studentCount) {
 		set("studentCount", studentCount);
 		return (M)this;
@@ -70,6 +79,15 @@ public abstract class BaseCourse<M extends BaseCourse<M>> extends Model<M> imple
 
 	public java.lang.Integer getPartEnd() {
 		return get("partEnd");
+	}
+
+	public M setEnable(java.lang.Integer enable) {
+		set("enable", enable);
+		return (M)this;
+	}
+
+	public java.lang.Integer getEnable() {
+		return get("enable");
 	}
 
 }
