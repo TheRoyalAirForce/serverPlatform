@@ -24,6 +24,7 @@ import app.controller.courseController;
 import app.controller.loginController;
 import app.controller.mainController;
 import app.model._MappingKit;
+import app.routes.adminRoutes;
 
 public class demoConfig extends JFinalConfig
 {
@@ -51,9 +52,7 @@ public class demoConfig extends JFinalConfig
 		//设置全局视图层根目录
         me.setBaseViewPath("/WEB-INF/view");
 		//静态路由
-		me.add("/",mainController.class);  
-		me.add("/login",loginController.class);
-		me.add("/course",courseController.class);
+		me.add(new adminRoutes());
 	}
 	@Override
 	public void configEngine(Engine me)    
@@ -73,7 +72,6 @@ public class demoConfig extends JFinalConfig
 		//me.addGlobalActionInterceptor(new commonInterceptor());
 	 
 		//me.addGlobalServiceInterceptor(new commonInterceptor());
-		
 	}
 	
 	public static DruidPlugin createDruidPlugin()   //连接池插件

@@ -90,6 +90,9 @@ public class courseController extends Controller {
 		renderJson(ret);
 	}
 	
+	/**
+	 * 获取某个学生所有缺席记录
+	 */
 	public void getStudentAbsentList(){
 		int studentId = getParaToInt("studentId");
 		List<Record> list =  courseService.me.getAbsentList(studentId);
@@ -105,6 +108,9 @@ public class courseController extends Controller {
 		renderJson(ret);
 	}
 	
+	/**
+	 * 获取某个学生所有请假记录
+	 */
 	public void getStudentLeaveList(){
 		int studentId = getParaToInt("studentId");
 		List<Record> list =  courseService.me.getLeaveList(studentId);
