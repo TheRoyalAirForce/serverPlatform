@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50160
 File Encoding         : 65001
 
-Date: 2018-06-03 16:00:36
+Date: 2018-06-09 20:49:24
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -35,9 +35,9 @@ CREATE TABLE `course_30002_student_list` (
 -- Records of course_30002_student_list
 -- ----------------------------
 INSERT INTO `course_30002_student_list` VALUES ('170327020', '30002', '386000001', '李明', '0', '0', '0', '');
-INSERT INTO `course_30002_student_list` VALUES ('170327021', '30002', '386000001', '摩雯思', '0', '0', '0', '');
+INSERT INTO `course_30002_student_list` VALUES ('170327021', '30002', '386000001', '摩雯思', '0', '1', '0', '');
 INSERT INTO `course_30002_student_list` VALUES ('170327022', '30002', '386000001', '路建宁', '0', '0', '0', '');
-INSERT INTO `course_30002_student_list` VALUES ('170327023', '30002', '386000001', '莫文蔚', '0', '0', '0', '');
+INSERT INTO `course_30002_student_list` VALUES ('170327023', '30002', '386000001', '莫文蔚', '1', '0', '0', '');
 
 -- ----------------------------
 -- Table structure for `course_30003_student_list`
@@ -58,16 +58,16 @@ CREATE TABLE `course_30003_student_list` (
 -- ----------------------------
 -- Records of course_30003_student_list
 -- ----------------------------
-INSERT INTO `course_30003_student_list` VALUES ('170327024', '30003', '386000003', '江萱', '0', '1', '0', '');
+INSERT INTO `course_30003_student_list` VALUES ('170327024', '30003', '386000003', '江萱', '0', '0', '0', '');
 INSERT INTO `course_30003_student_list` VALUES ('170327025', '30003', '386000003', '方杰', '0', '0', '0', '');
-INSERT INTO `course_30003_student_list` VALUES ('170327026', '30003', '386000003', '龙心', '1', '0', '0', '');
+INSERT INTO `course_30003_student_list` VALUES ('170327026', '30003', '386000003', '龙心', '0', '0', '0', '');
 INSERT INTO `course_30003_student_list` VALUES ('170327027', '30003', '386000003', '陈莉', '0', '0', '0', '');
 
 -- ----------------------------
--- Table structure for `sign_in_30003_20180603`
+-- Table structure for `sign_in_30002_20180609`
 -- ----------------------------
-DROP TABLE IF EXISTS `sign_in_30003_20180603`;
-CREATE TABLE `sign_in_30003_20180603` (
+DROP TABLE IF EXISTS `sign_in_30002_20180609`;
+CREATE TABLE `sign_in_30002_20180609` (
   `studentId` int(20) NOT NULL COMMENT '学生ID',
   `row` int(10) NOT NULL COMMENT '签到座位（行）',
   `col` int(10) NOT NULL COMMENT '签到座位（列）',
@@ -79,12 +79,12 @@ CREATE TABLE `sign_in_30003_20180603` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of sign_in_30003_20180603
+-- Records of sign_in_30002_20180609
 -- ----------------------------
-INSERT INTO `sign_in_30003_20180603` VALUES ('170327024', '0', '0', '0', '0', '1', '1970-01-01 08:00:00');
-INSERT INTO `sign_in_30003_20180603` VALUES ('170327025', '1', '1', '1', '0', '0', '2018-06-03 15:23:36');
-INSERT INTO `sign_in_30003_20180603` VALUES ('170327026', '0', '0', '0', '1', '0', '1970-01-01 08:00:00');
-INSERT INTO `sign_in_30003_20180603` VALUES ('170327027', '0', '0', '0', '0', '0', '1970-01-01 08:00:00');
+INSERT INTO `sign_in_30002_20180609` VALUES ('170327020', '0', '0', '0', '1', '0', '1970-01-01 08:00:00');
+INSERT INTO `sign_in_30002_20180609` VALUES ('170327021', '0', '0', '0', '0', '1', '1970-01-01 08:00:00');
+INSERT INTO `sign_in_30002_20180609` VALUES ('170327022', '0', '0', '0', '1', '0', '1970-01-01 08:00:00');
+INSERT INTO `sign_in_30002_20180609` VALUES ('170327023', '0', '0', '0', '1', '0', '1970-01-01 08:00:00');
 
 -- ----------------------------
 -- Table structure for `t_auto_sign_in_table_list`
@@ -96,12 +96,12 @@ CREATE TABLE `t_auto_sign_in_table_list` (
   `courseId` int(20) NOT NULL COMMENT '签到的课程ID',
   `createDate` date NOT NULL COMMENT ' 建表日期',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_auto_sign_in_table_list
 -- ----------------------------
-INSERT INTO `t_auto_sign_in_table_list` VALUES ('5', 'sign_in_30003_20180603', '30003', '2018-06-03');
+INSERT INTO `t_auto_sign_in_table_list` VALUES ('11', 'sign_in_30002_20180609', '30002', '2018-06-09');
 
 -- ----------------------------
 -- Table structure for `t_classroom`
@@ -331,16 +331,16 @@ CREATE TABLE `t_user` (
 -- ----------------------------
 -- Records of t_user
 -- ----------------------------
-INSERT INTO `t_user` VALUES ('10000', '李震宇', 'root123456', '男', '1', '13235905890', '810772273@qq.com', '2018-05-20', null, '0');
+INSERT INTO `t_user` VALUES ('10000', '李震宇', '123456', '男', '1', '13235905890', 'admin', '2018-05-20', null, '0');
 INSERT INTO `t_user` VALUES ('170327019', '邓文路', '123456', '男', '2', '13233333333', '123@qq.com', '2018-05-20', '10000', '0');
 INSERT INTO `t_user` VALUES ('170327020', '李明', '123456', '男', '2', '13233333334', '124@qq.com', '2018-05-20', '10000', '0');
 INSERT INTO `t_user` VALUES ('170327021', '摩雯思', '123456', '女', '2', '13233333335', '126@qq.com', '2018-05-20', '10000', '0');
 INSERT INTO `t_user` VALUES ('170327022', '路建宁', '123456', '男', '2', '13233333336', '127@qq.com', '2018-05-20', '10000', '0');
 INSERT INTO `t_user` VALUES ('170327023', '莫文蔚', '123456', '女', '2', '13233333337', '129@qq.com', '2018-05-20', '10000', '0');
-INSERT INTO `t_user` VALUES ('170327024', '江萱', '123456', '女', '2', '13233333338', '130@qq.com', '2018-05-20', '10000', '0');
+INSERT INTO `t_user` VALUES ('170327024', '江萱', '123456', '女', '2', '13233333338', 'student', '2018-05-20', '10000', '0');
 INSERT INTO `t_user` VALUES ('170327025', '方杰', '123456', '男', '2', '13233333339', '134@qq.com', '2018-05-20', '10000', '0');
 INSERT INTO `t_user` VALUES ('170327026', '龙心', '123456', '女', '2', '13233333340', '136@qq,com', '2018-05-20', '10000', '0');
 INSERT INTO `t_user` VALUES ('170327027', '陈莉', '123456', '女', '2', '13233333341', '137@qq.com', '2018-05-20', '10000', '0');
 INSERT INTO `t_user` VALUES ('386000001', '叶东毅', '12345678', '男', '3', '13400000001', '60001@qq.com', '2018-05-20', '10000', '0');
 INSERT INTO `t_user` VALUES ('386000002', '于春燕', '12345678', '女', '3', '13400000002', '60002@qq.com', '2018-05-20', '10000', '0');
-INSERT INTO `t_user` VALUES ('386000003', '标哥', '12345678', '男', '3', '13400000003', '60003@qq.com', '2018-05-20', '10000', '0');
+INSERT INTO `t_user` VALUES ('386000003', '标哥', '123456', '男', '3', '13400000003', 'teacher', '2018-05-20', '10000', '0');

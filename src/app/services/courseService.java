@@ -7,6 +7,7 @@ import java.util.List;
 import com.jfinal.log.Log;
 import com.jfinal.plugin.activerecord.Db;
 import com.jfinal.plugin.activerecord.Record;
+import com.jfinal.template.stat.ast.Return;
 
 import app.model.AutoSignInTableList;
 import app.model.Course;
@@ -62,6 +63,89 @@ public class courseService {
 		return null;
 	}
 	
+	// 学生缺课记录更新，教师端做更新操作(在本次授课结束后)，或者每一天凌晨6点更新一次
+	public boolean studentAbsentUpdate(int courseId, int studentId) {
+		int num = 0;
+		Record model = null;
+		String sql = "select * from t_auto_sign_in_table_list where courseId=" + courseId;
+		List<AutoSignInTableList> autoSignInTableList = AutoSignInTableList.dao.find(sql);
+		for (AutoSignInTableList l : autoSignInTableList) {
+			model = Db.findFirst("select * from " + l.getTableName() + " where studentId=" + studentId);
+			if (model != null && model.getInt("isAbsent") == 1) {
+				num++;
+			}
+		}
+		// 统计旷课次数完毕，在名册表上更新
+		try {
+			String CoursetableName = "course_" + courseId + "_student_list";
+			// 在名册表上更新记录
+			Db.update("UPDATE " + CoursetableName + " SET AbsentRecordCount=" + num + " WHERE studentId=" + studentId);
+			return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+	
+	// 学生请假
+	public Record studentLeave(int courseId, int studentId) {
+		String mDate = dateTimeUtil.getChangeTime3(dateTimeUtil.getTimel()); // 当前日期
+		String tableName = "sign_in_" + courseId + "_" + mDate;
+		Record model = Db.findById(tableName, "studentId", studentId);
+		String CoursetableName = "course_" + courseId + "_student_list";
+		if (model != null && model.getInt("isLeave") == 0) {
+			try {
+				model.set("isLeave", 1);
+				model.set("isAbsent", 0);
+				Db.update(tableName, "studentId", model);
+				// 在名册表上更新记录
+				Record record = Db.findFirst("select * from " + CoursetableName + " where studentId=" + studentId);
+				int num = record.getInt("LeaveRecordCount") + 1;
+				Db.update("UPDATE " + CoursetableName + " SET LeaveRecordCount=" + num + " WHERE studentId=" + studentId);
+				return model;
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return null;
+	}
+	
+	// 查询某一次课学生的签到座位（限今日）
+	public List<Record> getOccupiedSeats(int courseId) {
+		String mDate = dateTimeUtil.getChangeTime3(dateTimeUtil.getTimel()); // 当前日期
+		return getOccupiedSeatsList(courseId, mDate);
+	}
+
+	// 查询指定日期某一课程学生签到座位情况
+	public List<Record> getOccupiedSeats(int courseId, String mDate) {
+		return getOccupiedSeatsList(courseId, mDate);
+	}
+
+	// 获得某次课所有已经被选择的签到座位
+	public List<Record> getOccupiedSeatsList(int courseId, String mDate) {
+		try {
+			String tableName = "sign_in_" + courseId + "_" + mDate;
+			String sql = "select studentId,row,col from " + tableName + " where not row=0 and not col=0";
+			return Db.find(sql);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	// 獲得本次课签到情况，返回该签到表数据（限教师端调用,今日）
+	public List<Record> getSignList(int courseId){
+		String mDate = dateTimeUtil.getChangeTime3(dateTimeUtil.getTimel()); // 当前日期
+		String tableName = "sign_in_" + courseId + "_" + mDate;
+		String sql = "select * from "+ tableName;
+		try {
+			return Db.find(sql);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
 	// 获得该学生的所有缺席记录
 	public List<Record> getAbsentList(int studentId) {
 		String sql = "select * from t_auto_sign_in_table_list";
@@ -127,7 +211,7 @@ public class courseService {
 				model.set("row", 0);
 				model.set("col", 0);
 				model.set("flag", 0);
-				model.set("isAbsent", 0);
+				model.set("isAbsent", 1);   //默认设置为缺课
 				model.set("isLeave", 0);
 				model.set("signTime", new Date(0));
 				Db.save(tableName, model);  //插入数据

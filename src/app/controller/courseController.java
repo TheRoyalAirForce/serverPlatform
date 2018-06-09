@@ -1,5 +1,6 @@
 package app.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -67,6 +68,92 @@ public class courseController extends Controller {
 		else{
 			ret.put("code", -1);
 			ret.put("msg", "该课程没有该学生ID，或者该座位已经被签到");
+		}
+		renderJson(ret);
+	}
+	
+	/**
+	 * 学生请假，限当日
+	 */
+	public void studentLeave()
+	{
+		int courseId = getParaToInt("courseId");
+		int studentId = getParaToInt("studentId");
+		//请假并返回学生信息
+		Record model = courseService.me.studentLeave(courseId, studentId);
+		Ret ret = Ret.create();
+		if(model != null){
+			ret.put("code", 1);
+			ret.put("msg", "请假成功");
+			ret.put("data", model);
+		}
+		else{
+			ret.put("code", -1);
+			ret.put("msg", "该次课程没有该学生ID, 或已经请假");
+		}
+		renderJson(ret);
+	}
+	
+	/**
+	 * 学生缺课记录更新
+	 */
+	public void studentAbsent(){
+		int courseId = getParaToInt("courseId");
+		int studentId = getParaToInt("studentId");
+		Ret ret = Ret.create();
+		//请假并返回学生信息
+		boolean flag = courseService.me.studentAbsentUpdate(courseId, studentId);
+		if(flag){
+			ret.put("code", 1);
+			ret.put("msg", "更新成功");
+		}
+		else{
+			ret.put("code", -1);
+			ret.put("msg", "操作失败");
+		}
+		renderJson(ret);
+	}
+	
+	/**
+	 * 获取某次课已经被占用的签到座位
+	 */
+	public void getOccupiedSeatList(){
+		String mDate = getPara("mDate");
+		int courseId = getParaToInt("courseId");
+		Ret ret = Ret.create();
+		List<Record> list = new ArrayList<Record>();
+		if(mDate == null || mDate.equals("") || mDate.length()!=8){
+			list = courseService.me.getOccupiedSeats(courseId);
+		}
+		else{
+			list = courseService.me.getOccupiedSeats(courseId, mDate);
+		}
+		if(list != null && list.size()>0){
+			ret.put("code", 1);
+			ret.put("msg", "获取数据成功");
+			ret.put("data", list);
+		}
+		else{
+			ret.put("code", -1);
+			ret.put("msg", "无座位信息");
+		}
+		renderJson(ret);
+	}
+	
+	/**
+	 * 获取某次课的所有 学生的签到表信息（教师端调用）
+	 */
+	public void getSignList(){
+		int courseId = getParaToInt("courseId");   //获得传入的课程ID
+		Ret ret = Ret.create();
+		List<Record> list =  courseService.me.getSignList(courseId);
+		if(list != null && list.size() > 0){
+			ret.put("code", 1);
+			ret.put("data", list);
+		}
+		else{
+			ret.put("code", -1);
+			ret.put("msg", "该次课未开课，尚未创建签到表");
 		}
 		renderJson(ret);
 	}
