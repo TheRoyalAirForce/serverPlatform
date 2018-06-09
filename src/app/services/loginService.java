@@ -14,8 +14,17 @@ public class loginService {
 	// 登录用户
 	public User findUser(String username, String password) {
 		//String pwd = MD5Util.md5(password);
-		String sql = "select * from t_user where phone = '" + username + "' or email = '" + username + "' or id=" + username;                                
+		String sql = "select * from t_user where phone = '" + username + "' or email = '" + username + "'";  // + "' or id=" + username;    
  		User user = User.dao.findFirst(sql);
+ 		if(user == null){
+ 			try {
+				//对学号做查询
+ 				sql = "select * from t_user where id=" + username;
+ 				user = User.dao.findFirst(sql);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+ 		}
 		if (user != null && user.getPassword().equals(password)) {
 			return user;
 		}
