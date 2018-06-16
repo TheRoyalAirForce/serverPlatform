@@ -30,7 +30,7 @@ public class courseService {
 	public List<Record> getStudentList(int courseId){
 		List<Record> list = new ArrayList<Record>();
 		String tableName = "course_" + courseId + "_student_list";
-		String sql = "select studentId,studentName from " + tableName + " order by studentId asc";
+		String sql = "select studentId,courseId,studentName,AbsentRecordCount,LeaveRecordCount,remark from " + tableName + " order by studentId asc";
 		try {
 			list = Db.find(sql);
 		} catch (Exception e) {
@@ -125,7 +125,8 @@ public class courseService {
 	public List<Record> getOccupiedSeatsList(int courseId, String mDate) {
 		try {
 			String tableName = "sign_in_" + courseId + "_" + mDate;
-			String sql = "select studentId,row,col from " + tableName + " where not row=0 and not col=0";
+			//String sql = "select studentId,row,col from " + tableName + " where not row=0 and not col=0";
+			String sql = "select s.studentId,s.row,s.col,u.name as stdname from " + tableName + " as s join t_user as u on s.studentId = u.id";
 			return Db.find(sql);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -145,7 +146,51 @@ public class courseService {
 		}
 		return null;
 	}
-
+	// 獲得本次课签到情况，返回该签到表数据（限教师端调用,可选日期）
+	public List<Record> getSignList(int courseId, String mDate){
+		String tableName = "sign_in_" + courseId + "_" + mDate;
+		String sql = "select * from "+ tableName;
+		try {
+			return Db.find(sql);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	// 获得某个老师所有的开课信息
+	public List<Course> getCourseList(int teacherId){
+		List<Course> list = new ArrayList<Course>();
+		try {
+			String sql = "select * from t_course where teacherId=" + teacherId;
+			list = Course.dao.find(sql);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
+	
+	// 查询某个老师的所有上课和签到记录（多张签到表表名，日期）
+	public List<AutoSignInTableList> getCourseSignList(int teacherId){
+		List<Course> list = getCourseList(teacherId);
+		if(list.size() > 0){
+			List<Integer> courseList = new ArrayList<Integer>();
+			for(Course c:list){
+				courseList.add(c.getId());
+			}
+			String sql = "select * from t_auto_sign_in_table_list";
+			List<AutoSignInTableList> autoSignInTableList = AutoSignInTableList.dao.find(sql);
+			List<AutoSignInTableList> sList = new ArrayList<AutoSignInTableList>();
+			for(AutoSignInTableList l:autoSignInTableList){
+				if(courseList.contains(l.getCourseId())){   
+					sList.add(l);
+				}
+			}
+			return sList;
+		}
+		return null;
+	}
+	
 	// 获得该学生的所有缺席记录
 	public List<Record> getAbsentList(int studentId) {
 		String sql = "select * from t_auto_sign_in_table_list";

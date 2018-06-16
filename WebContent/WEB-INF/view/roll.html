@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>test</title>
+
+<link href="assets/css/haiersoft.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="assets/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="stylesheet" type="text/css" href="assets/css/css.css" />
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap-table.js"></script>
+<script src="assets/js/locale/bootstrap-table-zh-CN.js"></script>
+<script src="assets/js/ArbetTable.js"></script>
+<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+<link href="assets/css/bootstrap-table.css" rel="stylesheet" />
+<link href="assets/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+<!-- Contents -->
+<div id="Contents">
+	<script type="text/javascript">
+				$(
+						function() {
+							$(".select").each(
+									function() {
+										var s = $(this);
+										var z = parseInt(s.css("z-index"));
+										var dt = $(this).children("dt");
+										var dd = $(this).children("dd");
+										var _show = function() {
+											dd.slideDown(200);
+											dt.addClass("cur");
+											s.css("z-index", z + 1);
+										};
+										var _hide = function() {
+											dd.slideUp(200);
+											dt.removeClass("cur");
+											s.css("z-index", z);
+										};
+										dt.click(function() {
+											dd.is(":hidden") ? _show()
+													: _hide();
+										});
+										dd.find("a").click(function() {
+											dt.html($(this).html());
+											_hide();
+										});
+										$("body").click(
+												function(i) {
+													!$(i.target).parents(
+															".select").first()
+															.is(s) ? _hide()
+															: "";
+												});
+									})
+						})
+			</script>
+	<img src="assets/img/coin02.png" /><span><a href="#">首页</a>&nbsp;-&nbsp;<a href="#">学生点名</a>&nbsp;-</span>&nbsp;随机点名
+	<form id="courseForm" class="form-horizontal">
+            <div class="control-group">
+              <label class="control-label">查询课程编号 (限今日):</label>
+              <input name="courseId" type="text" class="span11" placeholder="课程编号（如30003）" />
+			  <button type="button" class="btn btn-info" id='toQueryBtn'>查询</button>
+            </div>
+    </form>
+	<table id="table" class="mychar1-table" style="table-layout: fixed"></table>
+	<input class="btn btn-large" type="button" value="开始" onclick="start()">
+	<input class="btn btn-large" type="button" value="结束" onclick="end()">
+</div>
+	<script type="text/javascript">
+		var initdata = {"code":1,"data":[]};
+		$(function(){
+			initJsonData(initdata);
+		});
+		$('#toQueryBtn').click(function() {
+			$.ajax({
+				url : "course/getOccupiedSeatList",
+				type : "post",
+				data : $('#courseForm').serialize(),
+				//dataType : "json",//这里必须是json，不然没法拿到返回来的值
+				success : function(value) {
+					if(value.code == -1){
+						value = initdata;
+						initJsonData(value);
+					}
+					else{
+						initJsonData(value);
+					}
+				},
+				error : function() {
+					alert("执行错误！");
+				}
+			});
+		});
+		function initJsonData(value){
+			var obj = [];//创建一个数组对象
+			var item = value.data;
+			var orderArr = sortObjectArray(item, [ 'row', 'col' ]);  //按行列升序排序 
+			var index = 0;
+			// for(var i=0;i<orderArr.length;i++){
+			//     alert(orderArr[i].studentId);
+			// }
+			var array = [];
+			//0-10总共11行，0-9总共10列 ，从按行列升序小到大匹配座位  
+			for (var i = 0; i <= 10; i++) {
+				for (var j = 0; j < 10; j++) {
+					if (index < orderArr.length) {
+						//alert(index+"  "+orderArr[index].studentId+"  "+orderArr[index].stdname);
+						//如果 其中有row和col中有0，则该座位无效 
+						if (0 == orderArr[index].col || orderArr[index].row == 0){
+							index = index + 1;
+						}
+						//如果小于length  就进行验证0
+						if (j == orderArr[index].col && orderArr[index].row == i) {
+							//alert('进来了');
+							var temp = {
+								stdName : orderArr[index].stdname + ""
+							};
+							array.push(temp);
+							index = index + 1;
+						} 
+						else {
+							//如果不是返回的json数组中的数据 那么 也是直接构造
+							var temp = {
+								stdName : '-'
+							};
+							array.push(temp);
+						}
+					} else {
+						//不用验证  直接拼凑
+						var temp = {
+							stdName : '-'
+						};
+						array.push(temp);
+					}
+				}
+			}
+			var final_json_str = "[";
+			//取消第一行加载 
+			for (var i = 1; i <= 10; i++) {
+				var te = "{";
+				for (var j = i * 10; j < i * 10 + 10; j++) {
+					key_index = j % 10 + "";
+					if (key_index == 0) {
+						te = te + "key_index_" + key_index + ":"
+								+ i + ",";
+						continue;
+					}
+					if (key_index != 9) {
+						te = te + "key_index_" + key_index + ":'"
+								+ array[j].stdName + "',";
+					} else {
+						te = te + "key_index_" + key_index + ":'"
+								+ array[j].stdName + "'}";
+					}
+				}
+				if (i != 10) {
+					final_json_str = final_json_str + te + ",";
+				} else {
+					final_json_str = final_json_str + te + "]";
+				}
+			}
+			
+			console.log(final_json_str);
+
+			$.each(eval('(' + final_json_str + ')'), function(i, d) {
+				obj.push(d);
+				//alert(d.studentId);
+				//console.log(JSON.parse(dataFinal)[0])
+			});
+			initTable(obj);//等把所有数据存到obj之后，调用bootstrap table的方法
+		}
+		function sortObjectArray(objArr, keyArr, type) {
+			if (type != undefined && type != 'asc' && type != 'desc') {
+				return 'error';
+			}
+			var order = 1;
+			if (type != undefined && type == 'desc') {
+				order = -1;
+			}
+			var key = keyArr[0];
+			objArr.sort(function(objA, objB) {
+				if (objA[key] > objB[key]) {
+					return order;
+				} else if (objA[key] < objB[key]) {
+					return 0 - order;
+				} else {
+					return 0;
+				}
+			})
+			for (var i = 1; i < keyArr.length; i++) {
+				var key = keyArr[i];
+				objArr.sort(function(objA, objB) {
+					for (var j = 0; j < i; j++) {
+						if (objA[keyArr[j]] != objB[keyArr[j]]) {
+							return 0;
+						}
+					}
+					if (objA[key] > objB[key]) {
+						return order;
+					} else if (objA[key] < objB[key]) {
+						return 0 - order;
+					} else {
+						return 0;
+					}
+				})
+			}
+			return objArr;
+		}
+		function initTable(obj) {
+			$('#table').bootstrapTable('destroy');
+			$table = $('#table').bootstrapTable({
+				data : obj, //最终的JSON数据放在这里
+
+				height : $(window).height() - 100,//表格高度
+
+				//toolbar : '#toolbar',
+				striped : true,
+				pagination : true,
+				pageNumber : 1,//初始化分页数
+				pageSize : 100,//页面显示条数
+				// pageList : [ 5, 10, 20 ],
+				search : false,//启用搜索输入。
+				searchAlign : 'left',//指示如何对齐搜索输入。左'，'右'可以使用。
+				//showRefresh: true,  //显示“刷新”按钮。
+				showExport : false, //是否显示导出
+				exportDataType : "selected", //basic', 'all', 'selected'.
+				sidePagination : "client",//定义表格边分页，只能“client”或“server”。使用“server”需要设置“URL”或“Ajax”选项。
+				editable : true,
+				showColumns : true,
+				clickToSelect : true,//true选择复选框或RadioBOX点击排。
+				showToggle : true, //是否显示详细视图和列表视图的切换按钮
+				cardView : false, //是否显示详细视图
+				detailView : false,//显示详细视图表。
+				fixedColumns : true,
+				fixedNumber : 10,
+				minimunCountColumns : 2,
+
+				columns : [ {
+
+					field : 'key_index_0',
+
+					title : '行/列',
+
+					align : 'center',
+
+					valign : 'center',
+
+					sortable : true
+
+				}, {
+
+					field : 'key_index_1',
+
+					title : '1',
+
+					align : 'center',
+
+					valign : 'center',
+
+					sortable : true
+
+				}, {
+
+					field : 'key_index_2',
+
+					title : '2',
+
+					align : 'center',
+
+					valign : 'center',
+
+					sortable : true
+
+				}, {
+
+					field : 'key_index_3',
+
+					title : '3',
+
+					align : 'center',
+
+					valign : 'center',
+
+					sortable : true
+
+				}, {
+
+					field : 'key_index_4',
+
+					title : '4',
+
+					align : 'center',
+
+					valign : 'center',
+
+					sortable : true
+
+				}, {
+
+					field : 'key_index_5',
+
+					title : '5',
+
+					align : 'center',
+
+					valign : 'center',
+
+					sortable : true
+
+				}, {
+
+					field : 'key_index_6',
+
+					title : '6',
+
+					align : 'center',
+
+					valign : 'center',
+
+					sortable : true
+
+				}, {
+
+					field : 'key_index_7',
+
+					title : '7',
+
+					align : 'center',
+
+					valign : 'center',
+
+					sortable : true
+
+				}, {
+
+					field : 'key_index_8',
+
+					title : '8',
+
+					align : 'center',
+
+					valign : 'center',
+
+					sortable : true
+
+				}, {
+
+					field : 'key_index_9',
+
+					title : '9',
+
+					align : 'center',
+
+					valign : 'center',
+
+					sortable : true
+
+				} ]
+
+			});
+		}
+		var timer = null;
+
+		// 这是一个函数，表示一个功能
+		function start() {
+
+			timer = setInterval(function() {
+				//alert("要开始了！");
+				// console.log("???");
+				// 1.找到所有的 单元格
+				var allTd = document.getElementsByTagName("td");
+				var count = 0;
+				var allTdContent = [];
+				var arrRowsNum = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10' ];
+				for (var i = 0; i < allTd.length; i++) {
+					if (allTd[i].innerText != '-' && arrRowsNum.indexOf(allTd[i].innerText) == -1) {
+						count++;
+						allTdContent.push(allTd[i]);
+					}
+				}
+				//alert(allTdContent.length);
+				var num = parseInt(Math.random() * count);
+
+				// 2.遍历所有单元格，将所有单元格加上背景颜色
+				for (var i = 0; i < allTdContent.length; i++) {
+
+					// 如果（xxxxx） {
+					// 1
+					// } 否则 {
+					// 2
+					// }
+
+					if (i == num) {
+						allTdContent[i].className = "tdBg";
+					} else {
+						allTdContent[i].className = "";
+					}
+				}
+			}, 1000);
+		}
+
+		function end() {
+			clearInterval(timer);
+		}
+	</script>
+	<style>
+.tdBg {
+	background-color: pink;
+}
+</style>
+</body>
+</html>

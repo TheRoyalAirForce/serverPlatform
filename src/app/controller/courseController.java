@@ -10,6 +10,8 @@ import com.jfinal.core.Controller;
 import com.jfinal.kit.Ret;
 import com.jfinal.plugin.activerecord.Record;
 
+import app.model.AutoSignInTableList;
+import app.model.Course;
 import app.services.courseService;
 
 public class courseController extends Controller {
@@ -144,9 +146,16 @@ public class courseController extends Controller {
 	 * 获取某次课的所有 学生的签到表信息（教师端调用）
 	 */
 	public void getSignList(){
+		List<Record> list = new ArrayList<Record>();
 		int courseId = getParaToInt("courseId");   //获得传入的课程ID
+		String mDate = getPara("mDate");
 		Ret ret = Ret.create();
-		List<Record> list =  courseService.me.getSignList(courseId);
+		if(mDate == null || mDate.equals("") || mDate.length()!=8){
+			list = courseService.me.getSignList(courseId);
+		}
+		else{
+			list = courseService.me.getSignList(courseId, mDate);
+		}
 		if(list != null && list.size() > 0){
 			ret.put("code", 1);
 			ret.put("data", list);
@@ -209,6 +218,43 @@ public class courseController extends Controller {
 		else{
 			ret.put("code", -1);
 			ret.put("msg", "没有请假记录");
+		}
+		renderJson(ret);
+	}
+	
+	/**
+	 * 查询某个老师的所有课程
+	 */
+	public void getCourseList(){
+		int teacherId = getParaToInt("teacherId");
+		List<Course> list = courseService.me.getCourseList(teacherId);
+		Ret ret = Ret.create();
+		if(list != null && list.size() > 0){
+			ret.put("code", 1);
+			ret.put("data", list);
+		}
+		else{
+			ret.put("code", -1);
+			ret.put("msg", "没有该老师的开课信息");
+		}
+		renderJson(ret);
+	}
+	
+	/**
+	 * 查询某个老师的所有上课和签到记录（多张签到表表名，日期）
+	 */
+	public void getCourseSignList()
+	{
+		int teacherId = getParaToInt("teacherId");
+		List<AutoSignInTableList> list = courseService.me.getCourseSignList(teacherId);
+		Ret ret = Ret.create();
+		if(list != null && list.size() > 0){
+			ret.put("code", 1);
+			ret.put("data", list);
+		}
+		else{
+			ret.put("code", -1);
+			ret.put("msg", "没有该老师的上课记录");
 		}
 		renderJson(ret);
 	}

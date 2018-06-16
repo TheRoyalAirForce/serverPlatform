@@ -1,5 +1,12 @@
 package app.controller;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
+
+import javax.servlet.http.HttpSession;
+
+import org.apache.jasper.tagplugins.jstl.core.Url;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +18,7 @@ import com.jfinal.kit.HashKit;
 import com.jfinal.kit.Ret;
 import com.jfinal.kit.StrKit;
 import com.jfinal.plugin.activerecord.Db;
+import com.jfinal.plugin.activerecord.Record;
 import com.jfinal.plugin.redis.Cache;
 import com.jfinal.plugin.redis.Redis;
 
@@ -104,6 +112,12 @@ public class loginController extends Controller {
 			return;
 		}
 		//2.3登录成功
+		try {
+			setCookie("user_id", user.getId()+"", Consts.COOKIE_LIVE_TIMES);
+			setCookie("user_name", URLEncoder.encode(user.getName(), "UTF-8"), Consts.COOKIE_LIVE_TIMES);
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
 		setSessionAttr(Consts.ADMIN_SESSION_USER, user);
 		log.info("login success, by user: {}", user);
 		ret.put("user", user);
@@ -118,7 +132,7 @@ public class loginController extends Controller {
     	setSessionAttr(Consts.ADMIN_SESSION_USER, null);   //清除用户会话
     	redirect("/login");
     }
-	
+    
 	/**
 	 * 是否是验证码登录
 	 * @param useruame 用户名
@@ -149,4 +163,5 @@ public class loginController extends Controller {
 		}
 		return loginFailNum >= 3;
 	}
+	
 }
