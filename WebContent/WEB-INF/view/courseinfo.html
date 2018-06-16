@@ -9,6 +9,7 @@
 <link href="assets/css/print.css" rel="stylesheet" type="text/css" media="print" />
 <script src="assets/js/jquery-1.10.1.min.js"></script>
 <script src="assets/js/side.js" type="text/javascript"></script>
+<script src="assets/js/data_caches.js" type="text/javascript"></script>
 <!-- Boostrap start-->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 <link rel="stylesheet" href="assets/css/colorpicker.css" />
@@ -69,7 +70,7 @@
 							<td>课程名称</td>
 							<td>学生人数</td>
 							<td>上课时间</td>
-							<td>占用教室ID</td>	
+							<td>占用教室</td>	
 							<td>开课标志</td>													
 						</tr>
 					</table>
@@ -77,7 +78,7 @@
 				</div>
 			</div>
 			<!-- /MainForm -->
-			<p class="msg">注：一但点击开课，学生就不能再对该课程进行选课</p>
+			<p class="msg_rs">注：一但点击开课，学生就不能再对该课程进行选课</p>
 		</div>
 		<!-- /Contents -->
 </body>
@@ -115,6 +116,7 @@
 		        	var partEnd = result.data[i].partEnd;
 		        	var enable = result.data[i].enable;
 		        	var roomId = result.data[i].roomId;
+		        	var rname = result.data[i].rname;
 		        	var Coursetime = "星期"+week+", "+partStart+"-"+partEnd+" 节";
 		        	// 以 HTML 创建元素
 		        	if(enable == 1){
@@ -123,7 +125,7 @@
 		        	else{
 		        		var buttontxt = "<td>已开课</td>"
 		        	}
-		        	var txt="<tr id='row" + (i+1) + "'><td>"+courseId+"</td><td>"+courseName+"</td><td>"+stuCount+"</td><td>"+Coursetime+"</td><td>"+roomId+"</td>"+buttontxt+"</tr>";
+		        	var txt="<tr id='row" + (i+1) + "'><td>"+courseId+"</td><td>"+courseName+"</td><td>"+stuCount+"</td><td>"+Coursetime+"</td><td>"+rname+"</td>"+buttontxt+"</tr>";
 		        	$("#tableList tr:eq("+i+") ").after(txt);          // 在表头之后插入新元素
 		        }
 		    }

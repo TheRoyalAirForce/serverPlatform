@@ -159,11 +159,11 @@ public class courseService {
 	}
 	
 	// 获得某个老师所有的开课信息
-	public List<Course> getCourseList(int teacherId){
-		List<Course> list = new ArrayList<Course>();
+	public List<Record> getCourseList(int teacherId){
+		List<Record> list = new ArrayList<Record>();
 		try {
-			String sql = "select * from t_course where teacherId=" + teacherId;
-			list = Course.dao.find(sql);
+			String sql = "select c.*,r.name as rname from t_course as c join t_classroom as r on c.roomId = r.id where c.teacherId=" + teacherId;
+			list = Db.find(sql);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -172,11 +172,11 @@ public class courseService {
 	
 	// 查询某个老师的所有上课和签到记录（多张签到表表名，日期）
 	public List<AutoSignInTableList> getCourseSignList(int teacherId){
-		List<Course> list = getCourseList(teacherId);
+		List<Record> list = getCourseList(teacherId);
 		if(list.size() > 0){
 			List<Integer> courseList = new ArrayList<Integer>();
-			for(Course c:list){
-				courseList.add(c.getId());
+			for(Record c:list){
+				courseList.add(c.getInt("id"));
 			}
 			String sql = "select * from t_auto_sign_in_table_list";
 			List<AutoSignInTableList> autoSignInTableList = AutoSignInTableList.dao.find(sql);

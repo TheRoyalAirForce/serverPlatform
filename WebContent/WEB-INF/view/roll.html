@@ -8,6 +8,7 @@
 <link href="assets/css/print.css" rel="stylesheet" type="text/css" media="print" />
 <link rel="stylesheet" type="text/css" href="assets/css/css.css" />
 
+<script src="assets/js/data_caches.js" type="text/javascript"></script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap-table.js"></script>
 <script src="assets/js/locale/bootstrap-table-zh-CN.js"></script>
@@ -60,7 +61,7 @@
 	<form id="courseForm" class="form-horizontal">
             <div class="control-group">
               <label class="control-label">查询课程编号 (限今日):</label>
-              <input name="courseId" type="text" class="span11" placeholder="课程编号（如30003）" />
+              <input id="corid" name="courseId" type="text" class="span11" placeholder="课程编号（如30003）" />
 			  <button type="button" class="btn btn-info" id='toQueryBtn'>查询</button>
             </div>
     </form>
@@ -71,6 +72,8 @@
 	<script type="text/javascript">
 		var initdata = {"code":1,"data":[]};
 		$(function(){
+		   	var kw = Cache.get("roll_keyword");
+			$('#corid').val(kw);
 			initJsonData(initdata);
 		});
 		$('#toQueryBtn').click(function() {
@@ -85,6 +88,7 @@
 						initJsonData(value);
 					}
 					else{
+				    	Cache.set("roll_keyword", $('#corid').val());
 						initJsonData(value);
 					}
 				},

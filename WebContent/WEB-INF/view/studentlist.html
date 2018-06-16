@@ -9,6 +9,7 @@
 <link href="assets/css/print.css" rel="stylesheet" type="text/css" media="print" />
 <script src="assets/js/jquery-1.10.1.min.js"></script>
 <script src="assets/js/side.js" type="text/javascript"></script>
+<script src="assets/js/data_caches.js" type="text/javascript"></script>
 <!-- Boostrap start-->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 <link rel="stylesheet" href="assets/css/colorpicker.css" />
@@ -63,7 +64,7 @@
           <form id="courseForm" class="form-horizontal">
             <div class="control-group">
               <label class="control-label">查询课程编号 :</label>
-              <input name="courseId" type="text" class="span11" placeholder="请输入课程编号（如30003）" />
+              <input id="corid" name="courseId" type="text" class="span11" placeholder="请输入课程编号（如30003）" />
 			  <button type="button" class="btn btn-info" onclick="getList()">查询</button>
             </div>
           </form>
@@ -97,6 +98,11 @@
 	$(function(){  
     	$('#msg_zero').hide();
 		//getList();
+    	var kw = Cache.get("studentlist_keyword");
+		$('#corid').val(kw);
+		if(kw != null && kw != ''){
+			getList();
+		}
 	});
 	function getList(){
 		$.ajax({  
@@ -106,6 +112,7 @@
 		    data: $('#courseForm').serialize(),
 		    contentType: "application/x-www-form-urlencoded; charset=utf-8",  
 		    success: function(result) {  
+		    	Cache.set("studentlist_keyword", $('#corid').val());
 		        //alert(result);
 		        if(result.code == -1){
 		        	 $('#msg_zero').text(result.msg);

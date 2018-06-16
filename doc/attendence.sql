@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50160
 File Encoding         : 65001
 
-Date: 2018-06-09 20:49:24
+Date: 2018-06-16 19:36:35
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -34,7 +34,7 @@ CREATE TABLE `course_30002_student_list` (
 -- ----------------------------
 -- Records of course_30002_student_list
 -- ----------------------------
-INSERT INTO `course_30002_student_list` VALUES ('170327020', '30002', '386000001', '李明', '0', '0', '0', '');
+INSERT INTO `course_30002_student_list` VALUES ('170327020', '30002', '386000001', '李明', '1', '0', '0', '');
 INSERT INTO `course_30002_student_list` VALUES ('170327021', '30002', '386000001', '摩雯思', '0', '1', '0', '');
 INSERT INTO `course_30002_student_list` VALUES ('170327022', '30002', '386000001', '路建宁', '0', '0', '0', '');
 INSERT INTO `course_30002_student_list` VALUES ('170327023', '30002', '386000001', '莫文蔚', '1', '0', '0', '');
@@ -83,8 +83,77 @@ CREATE TABLE `sign_in_30002_20180609` (
 -- ----------------------------
 INSERT INTO `sign_in_30002_20180609` VALUES ('170327020', '0', '0', '0', '1', '0', '1970-01-01 08:00:00');
 INSERT INTO `sign_in_30002_20180609` VALUES ('170327021', '0', '0', '0', '0', '1', '1970-01-01 08:00:00');
-INSERT INTO `sign_in_30002_20180609` VALUES ('170327022', '0', '0', '0', '1', '0', '1970-01-01 08:00:00');
+INSERT INTO `sign_in_30002_20180609` VALUES ('170327022', '4', '1', '1', '0', '0', '2018-06-09 21:02:26');
 INSERT INTO `sign_in_30002_20180609` VALUES ('170327023', '0', '0', '0', '1', '0', '1970-01-01 08:00:00');
+
+-- ----------------------------
+-- Table structure for `sign_in_30003_20180612`
+-- ----------------------------
+DROP TABLE IF EXISTS `sign_in_30003_20180612`;
+CREATE TABLE `sign_in_30003_20180612` (
+  `studentId` int(20) NOT NULL COMMENT '学生ID',
+  `row` int(10) NOT NULL COMMENT '签到座位（行）',
+  `col` int(10) NOT NULL COMMENT '签到座位（列）',
+  `flag` int(10) NOT NULL COMMENT '签到标志',
+  `isAbsent` tinyint(2) NOT NULL COMMENT '是否缺席',
+  `isLeave` tinyint(2) NOT NULL COMMENT '是否请假',
+  `signTime` datetime NOT NULL COMMENT '签到时间 （精确到秒）',
+  PRIMARY KEY (`studentId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of sign_in_30003_20180612
+-- ----------------------------
+INSERT INTO `sign_in_30003_20180612` VALUES ('170327024', '0', '0', '0', '1', '0', '1970-01-01 08:00:00');
+INSERT INTO `sign_in_30003_20180612` VALUES ('170327025', '3', '3', '1', '0', '0', '2018-06-12 19:53:26');
+INSERT INTO `sign_in_30003_20180612` VALUES ('170327026', '0', '0', '0', '1', '0', '1970-01-01 08:00:00');
+INSERT INTO `sign_in_30003_20180612` VALUES ('170327027', '0', '0', '0', '1', '0', '1970-01-01 08:00:00');
+
+-- ----------------------------
+-- Table structure for `sign_in_30003_20180613`
+-- ----------------------------
+DROP TABLE IF EXISTS `sign_in_30003_20180613`;
+CREATE TABLE `sign_in_30003_20180613` (
+  `studentId` int(20) NOT NULL COMMENT '学生ID',
+  `row` int(10) NOT NULL COMMENT '签到座位（行）',
+  `col` int(10) NOT NULL COMMENT '签到座位（列）',
+  `flag` int(10) NOT NULL COMMENT '签到标志',
+  `isAbsent` tinyint(2) NOT NULL COMMENT '是否缺席',
+  `isLeave` tinyint(2) NOT NULL COMMENT '是否请假',
+  `signTime` datetime NOT NULL COMMENT '签到时间 （精确到秒）',
+  PRIMARY KEY (`studentId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of sign_in_30003_20180613
+-- ----------------------------
+INSERT INTO `sign_in_30003_20180613` VALUES ('170327024', '0', '0', '0', '1', '0', '1970-01-01 08:00:00');
+INSERT INTO `sign_in_30003_20180613` VALUES ('170327025', '3', '3', '1', '0', '0', '2018-06-13 19:52:39');
+INSERT INTO `sign_in_30003_20180613` VALUES ('170327026', '0', '0', '0', '1', '0', '1970-01-01 08:00:00');
+INSERT INTO `sign_in_30003_20180613` VALUES ('170327027', '0', '0', '0', '1', '0', '1970-01-01 08:00:00');
+
+-- ----------------------------
+-- Table structure for `sign_in_30003_20180616`
+-- ----------------------------
+DROP TABLE IF EXISTS `sign_in_30003_20180616`;
+CREATE TABLE `sign_in_30003_20180616` (
+  `studentId` int(20) NOT NULL COMMENT '学生ID',
+  `row` int(10) NOT NULL COMMENT '签到座位（行）',
+  `col` int(10) NOT NULL COMMENT '签到座位（列）',
+  `flag` int(10) NOT NULL COMMENT '签到标志',
+  `isAbsent` tinyint(2) NOT NULL COMMENT '是否缺席',
+  `isLeave` tinyint(2) NOT NULL COMMENT '是否请假',
+  `signTime` datetime NOT NULL COMMENT '签到时间 （精确到秒）',
+  PRIMARY KEY (`studentId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of sign_in_30003_20180616
+-- ----------------------------
+INSERT INTO `sign_in_30003_20180616` VALUES ('170327024', '1', '2', '1', '0', '0', '2018-06-16 19:16:21');
+INSERT INTO `sign_in_30003_20180616` VALUES ('170327025', '6', '5', '1', '0', '0', '2018-06-16 19:16:34');
+INSERT INTO `sign_in_30003_20180616` VALUES ('170327026', '3', '8', '1', '0', '0', '2018-06-16 19:16:42');
+INSERT INTO `sign_in_30003_20180616` VALUES ('170327027', '8', '7', '1', '0', '0', '2018-06-16 19:17:00');
 
 -- ----------------------------
 -- Table structure for `t_auto_sign_in_table_list`
@@ -96,12 +165,15 @@ CREATE TABLE `t_auto_sign_in_table_list` (
   `courseId` int(20) NOT NULL COMMENT '签到的课程ID',
   `createDate` date NOT NULL COMMENT ' 建表日期',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_auto_sign_in_table_list
 -- ----------------------------
 INSERT INTO `t_auto_sign_in_table_list` VALUES ('11', 'sign_in_30002_20180609', '30002', '2018-06-09');
+INSERT INTO `t_auto_sign_in_table_list` VALUES ('13', 'sign_in_30003_20180612', '30003', '2018-06-12');
+INSERT INTO `t_auto_sign_in_table_list` VALUES ('14', 'sign_in_30003_20180613', '30003', '2018-06-13');
+INSERT INTO `t_auto_sign_in_table_list` VALUES ('15', 'sign_in_30003_20180616', '30003', '2018-06-16');
 
 -- ----------------------------
 -- Table structure for `t_classroom`

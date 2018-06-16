@@ -9,6 +9,7 @@
 <link href="assets/css/print.css" rel="stylesheet" type="text/css" media="print" />
 <script src="assets/js/jquery-1.10.1.min.js"></script>
 <script src="assets/js/side.js" type="text/javascript"></script>
+<script src="assets/js/data_caches.js" type="text/javascript"></script>
 <!-- Boostrap start-->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 <link rel="stylesheet" href="assets/css/colorpicker.css" />
@@ -95,7 +96,11 @@
 	//页面加载时执行   
 	$(function(){  
     	$('#msg_zero').hide();
-		//getList();
+    	var kw = Cache.get("leavelist_keyword");
+		$('#stdId').val(kw);
+		if(kw != null && kw != ''){
+			getList();
+		}
 	});
 	function getList(){
 		$.ajax({  
@@ -104,8 +109,9 @@
 		    async: false,
 		    data: $('#stdForm').serialize(),
 		    contentType: "application/x-www-form-urlencoded; charset=utf-8",  
-		    success: function(result) {  
-		        //alert(result);
+		    success: function(result) { 
+		    	Cache.set("leavelist_keyword", $('#stdId').val());
+		    	//alert(result);
 		        if(result.code == -1){
 		        	 $('#msg_zero').text(result.msg);
 		        	 $('#msg_zero').show();

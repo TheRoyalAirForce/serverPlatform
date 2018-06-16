@@ -227,7 +227,7 @@ public class courseController extends Controller {
 	 */
 	public void getCourseList(){
 		int teacherId = getParaToInt("teacherId");
-		List<Course> list = courseService.me.getCourseList(teacherId);
+		List<Record> list = courseService.me.getCourseList(teacherId);
 		Ret ret = Ret.create();
 		if(list != null && list.size() > 0){
 			ret.put("code", 1);
