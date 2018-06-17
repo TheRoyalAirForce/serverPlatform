@@ -107,7 +107,7 @@
 	function getList(){
 		$.ajax({  
 		    type: "post",  
-		    url:  "course/getStudentList",  
+		    url:  server_url + "course/getStudentList",  
 		    async: false,
 		    data: $('#courseForm').serialize(),
 		    contentType: "application/x-www-form-urlencoded; charset=utf-8",  

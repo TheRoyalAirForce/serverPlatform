@@ -78,7 +78,7 @@
 		});
 		$('#toQueryBtn').click(function() {
 			$.ajax({
-				url : "course/getOccupiedSeatList",
+				url : server_url + "course/getOccupiedSeatList",
 				type : "post",
 				data : $('#courseForm').serialize(),
 				//dataType : "json",//这里必须是json，不然没法拿到返回来的值

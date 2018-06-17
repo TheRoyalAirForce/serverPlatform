@@ -88,7 +88,7 @@ function getCookie(name)
 function changePwd(){
 	$.ajax({  
 	    type: "post",  
-	    url:  "user/changePwd?userId="+userid, 
+	    url:  server_url + "user/changePwd?userId="+userid, 
 	    data: $('#thisForm').serialize(),
 	    async: false,
 	    contentType: "application/x-www-form-urlencoded; charset=utf-8",  
