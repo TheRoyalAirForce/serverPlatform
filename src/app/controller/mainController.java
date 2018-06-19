@@ -23,8 +23,8 @@ public class mainController extends Controller{
 	public void head(){
 		render("head.html");
 	}
-	public void changepwd(){
-		render("changepwd.html");
+	public void changePwd(){
+		render("changePwd.html");
 	}
 	public void main(){
 		render("main.html");
@@ -36,27 +36,27 @@ public class mainController extends Controller{
 		render("news.html");
 	}
 	public void courseInfo(){
-		render("courseinfo.html");
+		render("courseInfo.html");
 	}
 	public void studentList(){
-		render("studentlist.html");
+		render("studentList.html");
 	}
 	public void leaveList(){
-		render("leavelist.html");
+		render("leaveList.html");
 	}
 	public void absentList(){
-		render("absentlist.html");
+		render("absentList.html");
 	}
 	public void autoSignList(){
-		render("autosignlist.html");
+		render("autoSignList.html");
 	}
 	public void autoSignDetail(){
-		render("autosigndetail.html");
+		render("autoSignDetail.html");
 	}
 	public void roll(){
 		render("roll.html");
 	}
 	public void myInfo(){
-		render("myinfo.html");
+		render("myInfo.html");
 	}
 }
