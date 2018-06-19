@@ -32,8 +32,8 @@ public class mainController extends Controller{
 	public void left(){
 		render("left.html");
 	}
-	public void p3(){
-		render("p3.html");
+	public void news(){
+		render("news.html");
 	}
 	public void courseInfo(){
 		render("courseinfo.html");

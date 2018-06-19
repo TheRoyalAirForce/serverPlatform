@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>news</title>
+    <style>
+        body,
+        ul,
+        li,
+        p,
+        h1,
+        h2,
+        h3,
+        d1,
+        dd,
+        form,
+        input,
+        textarea,
+        select {
+            padding: 0px;
+            margin: 0px;
+            font-family: "宋体";
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            border: none;
+        }
+
+        .left span {
+            color: #FFFFFF;
+            font-size: 20px;
+            line-height: 24px;
+            margin-left: 62px;
+            font-family: "隶书";
+            text-align: center;
+        }
+
+        .left a {
+            color: #ffffff;
+            font-size: 18px;
+            line-height: 24px;
+            /*  margin-left: 75px;  */
+            font-family: "隶书";
+
+        }
+
+        .left li {
+            height: 40px;
+            text-align: center;
+        }
+
+        .left p {
+            color: #d88b30;
+            font-size: 14px;
+            line-height: 18px;
+            text-indent: 1em;
+            font-family: "隶书";
+            text-align: left;
+        }
+
+        .right span {
+            color: #333333;
+
+            font-size: 13px;
+            line-height: 28px;
+        }
+
+        .right p {
+            font-family: "隶书";
+            font-size: 26px;
+        }
+
+        .location a {
+            text-decoration: none;
+            color: #333333;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap-table.js"></script>
+    <script src="./js/locale/bootstrap-table-zh-CN.js"></script>
+    <script src="./js/ArbetTable.js"></script>
+
+    <link href="./css/bootstrap-table.css" rel="stylesheet" />
+    <link href="./css/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body>
+    <style>
+        .list_main_content ul li {
+            height: 30px;
+            line-height: 30px;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        .list_main_content ul li a {
+            color: #333;
+            font-size: 12px;
+        }
+
+        .list_time {
+            float: right;
+            padding-right: 25px;
+            color: #999999;
+        }
+
+
+
+        .ecms_pag {
+            margin: 0 auto;
+            width: 700px;
+        }
+
+        .ecms_pagination {
+            padding: 2px;
+            margin-top: 30px;
+            height: 22px;
+            line-height: 22px;
+            float: left;
+            padding-bottom: 5px;
+        }
+
+        .ecms_pagination ul {
+            margin: 0px;
+            padding: 0px;
+            text-align: left;
+            font-size: 12px;
+        }
+
+        .ecms_drop {
+            padding-left: 5px;
+        }
+
+        .ecms_pagination li {
+            padding-bottom: 1px;
+            display: inline;
+            list-style-type: none;
+        }
+
+        .ecms_pagination a {
+            padding: 4px 8px;
+            border: 1px solid #e5e5e5;
+            color: #666666;
+            text-decoration: none;
+        }
+
+        .ecms_pagination a:visited {
+            padding: 4px 8px;
+            background-color: #e5e5e5;
+            color: rgb(46, 106, 177);
+            text-decoration: none;
+            border: 1px solid #e5e5e5;
+        }
+
+        .ecms_pagination a:hover {
+            color: rgb(0, 0, 0);
+            background-color: #e5e5e5;
+        }
+
+        .ecms_pagination a:active {
+            border: 1px solid #e5e5e5;
+            color: rgb(0, 0, 0);
+            background-color: lightyellow;
+        }
+
+        .ecms_pagination li.ecms_currentpage {
+            margin-left: 2px;
+            padding: 5px 8px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            background-color: #cf0000;
+        }
+
+        .ecms_pagination li.ecms_disablepage {
+            padding: 4px 8px;
+            border: 1px solid #e5e5e5;
+            color: rgb(146, 146, 146);
+        }
+
+        .ecms_pagination li.ecms_nextpage {
+            font-weight: bold;
+        }
+
+        * html .ecms_pagination li.ecms_currentpage {
+            padding-right: 0px;
+            margin-right: 5px;
+        }
+
+        * html .ecms_pagination li.ecms_disablepage {
+            padding-right: 0px;
+            margin-right: 5px;
+        }
+
+        .ecms_go {
+            padding: 2px;
+            margin-right: 30px;
+            margin-top: 30px;
+            height: 22px;
+            line-height: 22px;
+            float: right;
+            padding-bottom: 5px;
+            font-size: 12px;
+        }
+
+        .ecms_list_p6 {
+            padding: 3px 7px;
+            border: 1px solid #e5e5e5;
+            color: #666666;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .ecms_jump_input {
+            width: 30px;
+        }
+    </style>
+    <div class="list_main_content">
+        <ul>
+
+
+            <li>
+                <span class="list_time">2018-06-14</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/14/101846b6-6d00-4acc-9bd8-786417818fb9.html">福州市人民政府与福州大学签订战略合作协议</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-15</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/15/94ed8aba-3902-4264-a854-1757e916c978.html">深圳市人才集团党委书记、董事长幸辉一行来福大洽谈合作事宜</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-15</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/15/0823e611-b4cc-45ec-a361-ca8167b80897.html">福州大学召开期末及暑期安全工作会议</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-15</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/15/91a61be3-f352-4b5a-8184-e814e15c58f1.html">湖州市吴兴区大学生就业创业政策推介暨政校人才战略合作签约仪式在福大举行</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-15</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/15/c00ef0c5-5aa2-44bd-971f-2aa51b5f47aa.html">第十六届中国•海峡项目成果交易会志愿服务总队成立仪式在福大举行</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-15</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/15/11d9824e-a38e-44ce-b629-8981e91b9a0e.html">福大代表团应邀访问希腊、土耳其高校与教育集团 达成多个合作项目</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-15</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/15/79b602f3-9636-4d0d-a571-d6eb3b240ea9.html">校纪委书记邹毅为2018届毕业生党员上专题党课</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-15</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/15/1c8460a2-9f4a-4e90-9bd2-f39539bbb144.html">福州大学举行高被引学者证书颁发仪式暨图书馆支持大学“双一流”建设交流会</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-14</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/14/a016baf4-a6e7-40b6-a00c-b36c58130f1f.html">林生副书记为至诚学院师生党员讲授专题党课</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-12</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/12/3e3dde8b-9168-4813-a147-a18a5ebe4f7f.html">校党委党校中层干部、科级干部学习贯彻党的十九大精神专题研讨班顺利结业</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-12</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/12/3e9b14d2-47a2-4ed5-b52f-612389b08d40.html">黄志刚副校长为中层、科级干部学习贯彻党的十九大精神专题研讨班作报告</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-11</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/11/c73d8e91-0008-411b-b828-b314165bc4bb.html">全省新疆籍少数民族大学生专题报告会在福大举行</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-11</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/11/543d1075-a668-4ace-a2a3-5bd2847abf88.html">柯文彬校友当选加拿大安大略省保守党省议员</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-10</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/10/7957e53c-3fca-4145-857e-853ec99972e7.html">福大学子喜获2018年海峡论坛首届创意涂鸦大奖赛三等奖</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-10</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/10/0179ce05-6249-41d2-9e86-fa4b743835fd.html">厦门市30万院校毕业生招聘行动启动仪式在福州大学举办</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-09</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/09/1b6a015f-a2e2-4284-a133-4a128a28bea4.html">福州大学陈剑锋教授主持的“海洋生物高值高质化利用技术创新服务平台”项目通过国家海洋局的中期考核</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-08</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/08/63a9dea8-827e-45e6-979f-2a43da6f8f0e.html">福大举行2018届毕业生班级校友联络员、学院年级校友召集人聘任大会</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-08</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/08/02d646de-1966-4309-8e21-56dd54050b47.html">民建天津市委、民建福建省委来福大民建经济研究院调研</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-06</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/06/e9a62b32-9458-4ed4-a797-15711f175111.html">福州大学四个专业通过教育部工程教育专业认证</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-06</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/06/3519bcda-9d59-42b3-a98c-406f3d072ba0.html">福州大学召开2018年研究生招生工作总结会</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-06</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/06/e29b8324-2f33-44a3-b8c6-c62f5ec87cf2.html">省委常委周联清莅临福州大学看望慰问付贤智院士</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-05</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/05/7c9b2a85-dcd2-482e-ae22-36c7111b7298.html">福建省第一届土木工程材料创意大赛在福州大学举办</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-05</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/05/d766c905-bf9b-428b-adbd-0f10ebcca4bf.html">福州大学首届菲律宾华裔青少年科技文化夏令营开营</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-05</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/05/e2746a28-2d65-43d2-a037-8b4b1bf08266.html">付贤智校长与新教师面对面座谈</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-05</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/05/f0b86036-c424-4d65-8812-d49a121de09f.html">陈永正书记看望化学学院“长江学者”特聘教授陶丰</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-05</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/05/a4a2c4d3-6854-4fe7-8a82-c00cb4c70934.html">福州大学举办第二届学习马克思主义理论“一‘马’当先”知识竞赛</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-05</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/05/5162ef07-8d25-4c33-88ab-23b8488f7f4c.html">福大学子在福建省“创青春”赛场勇夺14金 金奖数列全省高校第一</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-04</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/04/b33c94b1-0857-4894-b146-f3939f24555d.html">喜迎60周年校庆 福州大学举行2018年校友及基金会工作会议</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-04</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/04/f069bd9f-24e0-4023-b357-331a00aedd8e.html">福州大学获批2018年教育部“丝绸之路”奖学金项目</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-01</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/01/54687cc5-45d5-4889-9162-1278186ac699.html">福州大学召开大学生征兵预征对象座谈会</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-01</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/01/2641f650-0ee0-4924-b545-02c79bbf56bb.html">福州大学召开2018年度信息工作会议</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-01</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/01/ef4138ec-420f-4d6a-acbd-bd4b840206dd.html">国家国防科技工业局与福建省人民政府正式签约共建福州大学</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-06-01</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/06/01/fac4e998-6d1d-4946-8f16-86cfaa193c0c.html">福州大学在第十七届福建省研究生自然辩证法论文演讲会上获佳绩</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-05-31</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/05/31/5c62a4a8-954f-4875-8966-3e03e5aa5985.html">福大代表出席教育部产学合作协同育人项目对接会并作主题报告</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-05-30</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/05/30/73b662c2-5927-4c39-9c46-f49a0d8d1262.html">福州大学召开2018年经济责任审计联席会议</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-05-30</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/05/30/d2327efe-c5b2-4f69-b190-10495de9a2f3.html">福大布鲁诺教授在第七届“我与外教”全国大赛中获评“外教中国”年度人物</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-05-30</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/05/30/73d729a0-8b66-4634-ab34-b10255bd5818.html">国家级实验教学示范中心联席会经管学科组主任联席会议在福大召开</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-05-29</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/05/29/4274bdd5-e78f-40e8-aad6-4df376ff0d2d.html">福州大学表彰首届“数字中国”建设峰会优秀志愿者</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-05-28</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/05/28/6ac572e3-5c63-4754-865d-c235ce5efb8d.html">福大举办第二届土木类研究生POSTER展 展出182份优秀学术海报</a>
+            </li>
+
+            <li>
+                <span class="list_time">2018-05-26</span>
+                <a href="http://news.fzu.edu.cn/html/fdyw/2018/05/26/4ca0f2e3-b442-4031-8878-7c8a0761a949.html">福州大学心理健康月系列活动：第十届校园心理情景剧决赛圆满落幕</a>
+            </li>
+
+
+        </ul>
+    </div>
+
+</body>
+
+</html>
