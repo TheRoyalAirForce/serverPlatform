@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="attendentServer" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="660ced75-73d2-4772-a97d-5e165a751f88" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/.jsdtscope" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.container" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/web/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/antlr4-runtime-4.6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/antlr4-runtime-4.6.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/beetl-2.7.13-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/beetl-2.7.13-sources.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/beetl-2.7.13.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/beetl-2.7.13.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/c3p0-0.9.5.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/c3p0-0.9.5.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/cos-26Dec2008.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/cos-26Dec2008.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/druid-1.0.26.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/druid-1.0.26.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/ehcache-core-2.6.11.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/ehcache-core-2.6.11.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/ehcache.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/ehcache.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/fastjson-1.1.34.android.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/fastjson-1.1.34.android.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/jfinal-3.1-bin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jfinal-3.1-bin.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/jsp-api.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jsp-api.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/mchange-commons-java-0.2.10.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mchange-commons-java-0.2.10.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/mysql-connector-java-5.1.20-bin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.20-bin.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/servlet-api.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/servlet-api.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/slf4j-api-1.6.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/slf4j-api-1.6.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/slf4j-jdk14-1.6.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/slf4j-jdk14-1.6.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/view/absentList.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/absentList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/view/autoSignDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/autoSignDetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/view/autoSignList.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/autoSignList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/view/changePwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/changePwd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/view/courseInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/courseInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/view/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/view/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/view/leaveList.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/leaveList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/view/left.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/left.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/view/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/view/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/view/myInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/myInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/view/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/view/roll.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/roll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/view/studentList.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/studentList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/avatars/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/avatars/Thumbs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/avatars/avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/avatars/avatar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/avatars/avatar1.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/avatars/avatar1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/avatars/avatar2.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/avatars/avatar2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/avatars/avatar3.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/avatars/avatar3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/avatars/avatar4.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/avatars/avatar4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/avatars/avatar5.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/avatars/avatar5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/avatars/profile-pic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/avatars/profile-pic.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/avatars/user.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/avatars/user.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/ace-ie.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/ace-ie.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/ace-part2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/ace-part2.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/ace-rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/ace-rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/ace.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/ace.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/bootstrap-datetimepicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap-datetimepicker.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/bootstrap-duallistbox.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap-duallistbox.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/bootstrap-editable.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap-editable.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/bootstrap-multiselect.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap-multiselect.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/bootstrap-responsive.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap-responsive.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/bootstrap-table.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap-table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/bootstrap-timepicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap-timepicker.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/bootstrap-wysihtml5.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap-wysihtml5.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/chosen-sprite.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/chosen-sprite.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/chosen-sprite@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/chosen-sprite@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/chosen.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/chosen.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/colorbox.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/colorbox.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/colorpicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/colorpicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/colorpicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/colorpicker.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/component.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/dateIco.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/dateIco.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/datepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/datepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/datepicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/datepicker.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/daterangepicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/daterangepicker.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/dropzone.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/dropzone.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/fullcalendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/fullcalendar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/fullcalendar.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/fullcalendar.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/hack.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/hack.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/haiersoft.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/haiersoft.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/images/border.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/images/border.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/images/controls.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/images/controls.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/images/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/images/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/images/loading_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/images/loading_background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/images/meteorshower2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/images/meteorshower2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/images/overlay.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/images/overlay.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/images/pattern.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/images/pattern.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/img/alpha.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/img/alpha.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/img/hue.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/img/hue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/img/saturation.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/img/saturation.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/jquery-ui.custom.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/jquery-ui.custom.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/jquery.gritter.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/jquery.gritter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/jquery.gritter.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/jquery.gritter.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/manhuaDate.1.0.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/manhuaDate.1.0.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/matrix-login.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/matrix-login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/matrix-media.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/matrix-media.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/matrix-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/matrix-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/page.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/page1.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/page1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/prettify.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/prettify.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/print.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/print.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/public.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/public.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/select2-spinner.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/select2-spinner.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/select2.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/select2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/select2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/select2.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/select2.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/select2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/select2x2.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/select2x2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/ui.jqgrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/ui.jqgrid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/ui.jqgrid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/ui.jqgrid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/css/uniform.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/uniform.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/font-awesome/4.1.0/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/font-awesome/4.1.0/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/font-awesome/4.1.0/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/font-awesome/4.1.0/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/font-awesome/4.1.0/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/font-awesome/4.1.0/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/font-awesome/4.1.0/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/font-awesome/4.1.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/font-awesome/4.1.0/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/font-awesome/4.1.0/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/font-awesome/4.2.0/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/font-awesome/4.2.0/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/font-awesome/4.2.0/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/font-awesome/4.2.0/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/font-awesome/4.2.0/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/font-awesome/4.2.0/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/font-awesome/4.2.0/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/font-awesome/4.2.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/font-awesome/4.2.0/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/font-awesome/4.2.0/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/fonts/fonts.googleapis.com.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/fonts/fonts.googleapis.com.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/b1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/b1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/b2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/b2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/b3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/b3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/banner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/banner.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/closew.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/closew.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/co.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/co.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/db.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/db.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/down.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/down.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/fb.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/fb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/gg.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/gg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/icons-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/icons-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/icons.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/left-quotes.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/left-quotes.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/move-top.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/move-top.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/my1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/my1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/my2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/my2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/my3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/my3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/my4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/my4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/my5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/my5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/my6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/my6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/my7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/my7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/nav.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/nav.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/right-quotes.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/right-quotes.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/rightw.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/rightw.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/serve1.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/serve1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/serve2.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/serve2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/serve3.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/serve3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/serve4.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/serve4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/social-icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/social-icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/tw.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/tw.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/images/videobg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/images/videobg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coin01.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coin01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coin02.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coin02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coin03.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coin03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coin04.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coin04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coin07.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coin07.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coin08.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coin08.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coin09.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coin09.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coin10.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coin10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coin11.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coin11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coin111.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coin111.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coin12.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coin12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coin13.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coin13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coin14.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coin14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coin15.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coin15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coin16.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coin16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coin17.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coin17.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coin18.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coin18.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coin19.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coin19.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coin20.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coin20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coin21.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coin21.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coin222.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coin222.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coinL1.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coinL1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/coinL2.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/coinL2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/delete.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/delete.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/logBanner.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/logBanner.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/logLOGO.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/logLOGO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/logName.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/logName.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/logPwd.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/logPwd.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/logYZM.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/logYZM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/logo2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/logo2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/logo3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/logo3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/no.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/no.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/ok.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/ok.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/ralogo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/ralogo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/shanchu.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/shanchu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/topic.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/topic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/img/update.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/img/update.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/ArbetTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/ArbetTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/ace-editable.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/ace-editable.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/ace-elements.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/ace-elements.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/ace-extra.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/ace-extra.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/ace.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/ace.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/additional-methods.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/additional-methods.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/ajaxfileupload.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/ajaxfileupload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/bootbox.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/bootbox.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/bootstrap-colorpicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/bootstrap-colorpicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/bootstrap-colorpicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/bootstrap-colorpicker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/bootstrap-datepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/bootstrap-datepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/bootstrap-datepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/bootstrap-datepicker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/bootstrap-datetimepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/bootstrap-datetimepicker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/bootstrap-editable.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/bootstrap-editable.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/bootstrap-markdown.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/bootstrap-markdown.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/bootstrap-multiselect.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/bootstrap-multiselect.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/bootstrap-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/bootstrap-table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/bootstrap-tag.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/bootstrap-tag.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/bootstrap-timepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/bootstrap-timepicker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/bootstrap-wysihtml5.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/bootstrap-wysihtml5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/bootstrap-wysiwyg.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/bootstrap-wysiwyg.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/chosen.jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/chosen.jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/classie.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/classie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/dataTables.colVis.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/dataTables.colVis.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/dataTables.tableTools.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/dataTables.tableTools.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/data_caches.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/data_caches.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/daterangepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/daterangepicker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/dropzone.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/dropzone.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/excanvas.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/excanvas.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/fuelux.spinner.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/fuelux.spinner.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/fuelux.tree.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/fuelux.tree.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/fuelux.wizard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/fuelux.wizard.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/fullcalendar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/fullcalendar.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/grid.locale-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/grid.locale-en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/html5shiv.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/html5shiv.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery-1.10.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery-1.10.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery-1.7.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery-1.7.2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery-1.8.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery-1.8.3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery-ui.custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery-ui.custom.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery-ui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.1.11.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.1.11.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.2.1.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.2.1.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.autosize.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.autosize.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.bootstrap-duallistbox.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.bootstrap-duallistbox.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.colorbox-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.colorbox-min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.colorbox.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.colorbox.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.dataTables.bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.dataTables.bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.dataTables.bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.dataTables.bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.dataTables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.dataTables.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.easypiechart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.easypiechart.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.flot.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.flot.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.flot.pie.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.flot.pie.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.flot.resize.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.flot.resize.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.gritter.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.gritter.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.hotkeys.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.hotkeys.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.inputlimiter.1.3.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.inputlimiter.1.3.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.jqGrid.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.jqGrid.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.knob.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.knob.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.maskedinput.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.maskedinput.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.mobile.custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.mobile.custom.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.mousewheel.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.mousewheel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.nestable.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.nestable.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.peity.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.peity.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.raty.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.raty.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.slimscroll.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.slimscroll.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.sparkline.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.sparkline.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.toggle.buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.toggle.buttons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.ui.custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.ui.custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.ui.touch-punch.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.ui.touch-punch.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.uniform.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.uniform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.validate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.validate.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery.wizard.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery.wizard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/jquery1x.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/jquery1x.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-af-ZA.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-af-ZA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-af-ZA.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-af-ZA.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-ar-SA.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-ar-SA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-ar-SA.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-ar-SA.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-ca-ES.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-ca-ES.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-ca-ES.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-ca-ES.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-cs-CZ.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-cs-CZ.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-cs-CZ.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-cs-CZ.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-da-DK.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-da-DK.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-da-DK.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-da-DK.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-de-DE.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-de-DE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-de-DE.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-de-DE.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-el-GR.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-el-GR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-el-GR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-el-GR.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-en-US.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-en-US.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-en-US.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-en-US.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-es-AR.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-es-AR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-es-AR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-es-AR.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-es-CL.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-es-CL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-es-CL.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-es-CL.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-es-CR.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-es-CR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-es-CR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-es-CR.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-es-ES.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-es-ES.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-es-ES.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-es-ES.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-es-MX.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-es-MX.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-es-MX.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-es-MX.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-es-NI.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-es-NI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-es-NI.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-es-NI.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-es-SP.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-es-SP.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-es-SP.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-es-SP.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-et-EE.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-et-EE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-et-EE.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-et-EE.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-fa-IR.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-fa-IR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-fa-IR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-fa-IR.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-fr-BE.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-fr-BE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-fr-BE.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-fr-BE.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-fr-FR.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-fr-FR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-fr-FR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-fr-FR.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-he-IL.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-he-IL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-he-IL.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-he-IL.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-hr-HR.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-hr-HR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-hr-HR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-hr-HR.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-hu-HU.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-hu-HU.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-hu-HU.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-hu-HU.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-id-ID.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-id-ID.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-id-ID.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-id-ID.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-it-IT.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-it-IT.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-it-IT.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-it-IT.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-ja-JP.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-ja-JP.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-ja-JP.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-ja-JP.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-ka-GE.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-ka-GE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-ka-GE.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-ka-GE.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-ko-KR.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-ko-KR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-ko-KR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-ko-KR.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-ms-MY.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-ms-MY.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-ms-MY.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-ms-MY.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-nb-NO.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-nb-NO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-nb-NO.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-nb-NO.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-nl-NL.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-nl-NL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-nl-NL.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-nl-NL.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-pl-PL.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-pl-PL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-pl-PL.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-pl-PL.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-pt-BR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-pt-BR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-pt-BR.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-pt-PT.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-pt-PT.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-pt-PT.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-pt-PT.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-ro-RO.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-ro-RO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-ro-RO.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-ro-RO.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-ru-RU.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-ru-RU.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-ru-RU.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-ru-RU.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-sk-SK.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-sk-SK.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-sk-SK.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-sk-SK.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-sv-SE.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-sv-SE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-sv-SE.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-sv-SE.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-th-TH.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-th-TH.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-th-TH.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-th-TH.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-tr-TR.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-tr-TR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-tr-TR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-tr-TR.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-uk-UA.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-uk-UA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-uk-UA.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-uk-UA.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-ur-PK.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-ur-PK.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-ur-PK.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-ur-PK.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-uz-Latn-UZ.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-uz-Latn-UZ.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-uz-Latn-UZ.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-uz-Latn-UZ.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-vi-VN.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-vi-VN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-vi-VN.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-vi-VN.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-zh-CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-zh-CN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-zh-CN.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-zh-CN.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-zh-TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-zh-TW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/locale/bootstrap-table-zh-TW.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/locale/bootstrap-table-zh-TW.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/manhuaDate.1.0.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/manhuaDate.1.0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/markdown.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/markdown.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/maruti.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/maruti.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/masked.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/masked.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/matrix.calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/matrix.calendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/matrix.charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/matrix.charts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/matrix.chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/matrix.chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/matrix.dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/matrix.dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/matrix.form_common.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/matrix.form_common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/matrix.form_validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/matrix.form_validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/matrix.interface.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/matrix.interface.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/matrix.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/matrix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/matrix.login.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/matrix.login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/matrix.popover.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/matrix.popover.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/matrix.tables.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/matrix.tables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/modernizr.custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/modernizr.custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/moment.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/moment.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/popwin.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/popwin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/prettify.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/prettify.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/public.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/public.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/respond.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/respond.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/rollover.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/rollover.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/scroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/scroll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/select.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/select.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/select2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/select2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/side.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/side.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/spin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/spin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/typeahead.jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/typeahead.jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/assets/js/wysihtml5-0.3.0.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/wysihtml5-0.3.0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendentServer.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/Consts.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/Consts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/controller/courseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/controller/courseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/controller/loginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/controller/loginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/controller/mainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/controller/mainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/demoConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/demoConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/interceptors/loginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/interceptors/loginInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/AutoSignInTableList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/AutoSignInTableList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/Classroom.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/Classroom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/College.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/College.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/Course.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/Elecourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/Elecourse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/Major.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/Major.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/Permission.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/Permission.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/Rolepermission.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/Rolepermission.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/Teacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/_JFinalDemoGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/_JFinalDemoGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/_MappingKit.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/_MappingKit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/base/BaseAutoSignInTableList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/base/BaseAutoSignInTableList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/base/BaseClassroom.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/base/BaseClassroom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/base/BaseCollege.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/base/BaseCollege.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/base/BaseCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/base/BaseCourse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/base/BaseElecourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/base/BaseElecourse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/base/BaseMajor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/base/BaseMajor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/base/BasePermission.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/base/BasePermission.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/base/BaseRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/base/BaseRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/base/BaseRolepermission.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/base/BaseRolepermission.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/base/BaseStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/base/BaseStudent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/base/BaseTeacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/base/BaseTeacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/model/base/BaseUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/model/base/BaseUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/services/courseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/services/courseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/services/loginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/services/loginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/services/mainService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/services/mainService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/util/MD5Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/util/MD5Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/util/TimeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/util/TimeUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/util/dateTimeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/util/dateTimeUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/util/fileUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/app/util/jsonUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/app/util/jsonUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/test/DBTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/test/DBTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/test/JFinalModelCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/test/JFinalModelCase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/~$接口文档.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/接口文档.docx" beforeDir="false" afterPath="$PROJECT_DIR$/doc/接口文档.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/controller/courseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/controller/CourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/controller/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/controller/mainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/controller/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/demoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/DemoConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/interceptors/corsInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/interceptors/CorsInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/interceptors/loginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/interceptors/LoginInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/_JFinalDemoGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/_JFinalDemoGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/routes/adminRoutes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/routes/AdminRoutes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/routes/frontRoutes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/routes/FrontRoutes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/Listener/timeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/Listener/TimeListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/courseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/loginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/mainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/MainService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/userService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/util/dateTimeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/util/DateTimeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/util/fileUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/util/jsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/util/JsonUtil.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/build/classes/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/attendentServer.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/DemoConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-616">
+              <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/services/Listener/TimeListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/util/DateTimeUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/controller/MainController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/interceptors/LoginInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="21" column="54" lean-forward="true" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/controller/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="140" column="56" lean-forward="true" selection-start-line="140" selection-start-column="56" selection-end-line="140" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/app/services/Listener/TimeListener.java" />
+        <option value="$PROJECT_DIR$/src/app/util/DateTimeUtil.java" />
+        <option value="$PROJECT_DIR$/src/app/util/JsonUtil.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/artifacts/attendentServer.xml" />
+        <option value="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="85" />
+    <option name="y" value="25" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="attendentServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="attendentServer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="attendentServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="attendentServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="attendentServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="attendentServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="attendentServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="attendentServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="attendentServer" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.43" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/attendentServer/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="attendentServer">
+          <settings>
+            <option name="CONTEXT_PATH" value="/attendentServer" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_attendentServer" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9361" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="attendentServer" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="660ced75-73d2-4772-a97d-5e165a751f88" name="Default Changelist" comment="" />
+      <created>1554454004190</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554454004190</updated>
+      <workItem from="1554454007955" duration="1924000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1924000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Application Servers" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35410765" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/attendentServer.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/beetl.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/DBTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/JFinalModelCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-808">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/DemoConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-616">
+          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Consts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/services/Listener/TimeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/util/fileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/util/JsonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/util/DateTimeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/servlet-api.jar!/javax/servlet/http/HttpSession.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/jfinal-3.1-bin.jar!/com/jfinal/core/Controller.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9172">
+          <caret line="265" column="23" selection-start-line="265" selection-start-column="23" selection-end-line="265" selection-end-column="23" />
+          <folding>
+            <element signature="e#8613#8614#0" expanded="true" />
+            <element signature="e#8661#8662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/interceptors/LoginInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="21" column="54" lean-forward="true" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="140" column="56" lean-forward="true" selection-start-line="140" selection-start-column="56" selection-end-line="140" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>attendentServer</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web|attendentServer</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

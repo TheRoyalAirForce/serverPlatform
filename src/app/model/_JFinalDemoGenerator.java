@@ -12,7 +12,7 @@ import com.jfinal.kit.PropKit;
 import com.jfinal.plugin.activerecord.generator.Generator;
 import com.jfinal.plugin.druid.DruidPlugin;
 
-import app.demoConfig;
+import app.DemoConfig;
 
 /**
  *  demo 仅表达最为粗浅的 jfinal 用法，更为有价的实用的企业级用法
@@ -24,7 +24,7 @@ public class _JFinalDemoGenerator {
 	
 	public static DataSource getDataSource() {
 		PropKit.use("app/application.properties");
-		DruidPlugin druidPlugin = demoConfig.createDruidPlugin();
+		DruidPlugin druidPlugin = DemoConfig.createDruidPlugin();
 		druidPlugin.start();
 		return druidPlugin.getDataSource();
 	}
