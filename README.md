@@ -4,7 +4,7 @@
 
 小组成员：李震宇，胡进森，黄钿捷，邓文路，陈立        
 
-###### 一、开发环境：（请询问数据库与源码管理工具类型）      
+###### 一、开发环境：     
 
 ​	JDK1.8+    
 
@@ -12,7 +12,9 @@
 
 ​	Tomcat 8.0    
 
-​	MySQL5.1 以及图形界面navicat for MySQL    
+​	MySQL8.0.17 
+
+​	Navicat for MySQL 12.1
 
 ​	IntelliJ IDEA 2019
 
