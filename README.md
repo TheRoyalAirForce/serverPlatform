@@ -12,7 +12,7 @@
 
 ​	Tomcat 8.0    
 
-​	MySQL8.0.17 
+​	MySQL 8.0.17 
 
 ​	Navicat for MySQL 12.1
 
